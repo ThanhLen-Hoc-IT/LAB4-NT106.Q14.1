@@ -1,7 +1,6 @@
-using Lab4.Bai7;
-using Lab4.Bai7.Final;
+using Bai7Riel;
 
-namespace bai7
+namespace Bai07Riel
 {
     internal static class Program
     {
@@ -14,7 +13,7 @@ namespace bai7
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Final());
+            Application.Run(new FormAuth());
         }
     }
 }
