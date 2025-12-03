@@ -43,7 +43,7 @@ namespace Bai01
 
             if (string.IsNullOrEmpty(url))
             {
-                MessageBox.Show("Vui lòng nhập URL!");
+                MessageBox.Show("Vui lòng nhập URL!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
