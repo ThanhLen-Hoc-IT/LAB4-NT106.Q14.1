@@ -39,29 +39,11 @@ namespace Bai7Riel
             catch (Exception ex) { MessageBox.Show("Lỗi: " + ex.Message); }
         }
 
-        private async void btnRegister_Click(object sender, EventArgs e)
+        private void btnRegister_Click(object sender, EventArgs e)
         {
-            var regData = new
-            {
-                username = txtUser.Text,
-                email = txtUser.Text + "@gmail.com",
-                password = txtPass.Text,
-                first_name = "User",
-                last_name = "New",
-                phone = "0999999999",
-                dob = "2000-01-01"
-            };
-            try
-            {
-                using (var client = new HttpClient())
-                {
-                    var content = new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(regData), Encoding.UTF8, "application/json");
-                    var res = await client.PostAsync("https://nt106.uitiot.vn/api/v1/user/signup", content);
-                    if (res.IsSuccessStatusCode) MessageBox.Show("Đăng ký thành công! Hãy đăng nhập.");
-                    else MessageBox.Show("Đăng ký thất bại: " + await res.Content.ReadAsStringAsync());
-                }
-            }
-            catch (Exception ex) { MessageBox.Show("Lỗi: " + ex.Message); }
+            // Mở form đăng ký riêng
+            FormRegister frmReg = new FormRegister();
+            frmReg.ShowDialog();
         }
 
     }
