@@ -49,7 +49,7 @@
             btnAdd.BackColor = Color.MediumSeaGreen;
             btnAdd.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             btnAdd.ForeColor = Color.White;
-            btnAdd.Location = new Point(1113, 135);
+            btnAdd.Location = new Point(1116, 135);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(133, 63);
             btnAdd.TabIndex = 5;
@@ -62,7 +62,7 @@
             btnRandom.BackColor = Color.Orange;
             btnRandom.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             btnRandom.ForeColor = Color.White;
-            btnRandom.Location = new Point(520, 135);
+            btnRandom.Location = new Point(500, 135);
             btnRandom.Name = "btnRandom";
             btnRandom.Size = new Size(590, 63);
             btnRandom.TabIndex = 6;
